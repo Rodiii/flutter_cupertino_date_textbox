@@ -1,7 +1,7 @@
 name: cupertino_date_textbox
 description: Cupertino text box which can be used to select a date with CupertinoDatePicker
-version: 1.0.0+1
-homepage: https://rothech.com
+version: 1.0.0+2
+homepage: https://github.com/Rodiii/flutter_cupertino_date_textbox
 maintainer: Christoph Rothermel (@rothech)
 
 environment:
