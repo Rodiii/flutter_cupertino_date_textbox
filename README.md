@@ -20,7 +20,7 @@ CupertinoDateTextBox(
 Please refer to the example for usage: [Quick-Link](https://github.com/Rodiii/flutter_cupertino_date_textbox/blob/master/example/lib/main.dart)
 
 ### Example
-![Example](https://github.com/Rodiii/flutter_cupertino_date_textbox/raw/master/example.gif)
+![Example](https://github.com/Rodiii/flutter_cupertino_date_textbox/raw/master/example.gif?v=4&s=100)
 
 ## Bugs/Requests
 If you encounter any problems feel free to open an issue. If you feel the library is
