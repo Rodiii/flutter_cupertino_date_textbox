@@ -1,6 +1,8 @@
 
 # Flutter Cupertino Date Text Box
 
+![Example](https://github.com/Rodiii/flutter_cupertino_date_textbox/raw/master/example.gif?v=4&s=100)
+
 A text box with an attached CupertinoDatePicker which opens when the text box is tapped.
 
 With this library the following is possible:
@@ -17,10 +19,9 @@ CupertinoDateTextBox(
     hintText: 'Hint Text'))
 ```
 
-Please refer to the example for usage: [Quick-Link](https://github.com/Rodiii/flutter_cupertino_date_textbox/blob/master/example/lib/main.dart)
+You can find a full tutorial concerning `CupertinoDateTextBox` here [Tutorial](https://rothech.com/cupertino-date-textbox).
 
-### Example
-![Example](https://github.com/Rodiii/flutter_cupertino_date_textbox/raw/master/example.gif?v=4&s=100)
+Please refer to the example for usage: [Quick-Link](https://github.com/Rodiii/flutter_cupertino_date_textbox/blob/master/example/lib/main.dart)
 
 ## Bugs/Requests
 If you encounter any problems feel free to open an issue. If you feel the library is

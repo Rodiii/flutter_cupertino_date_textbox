@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
 class CupertinoDateTextBox extends StatefulWidget {
+  /// A text box widget which displays a cupertino picker to select a date if clicked
   CupertinoDateTextBox(
       {@required this.initialValue,
       @required this.onDateChange,
@@ -16,19 +17,35 @@ class CupertinoDateTextBox extends StatefulWidget {
       this.textfieldPadding = 15.0,
       this.enabled = true});
 
+  /// The initial value which shall be displayed in the text box
   final DateTime initialValue;
+
+  /// The function to be called if the selected date changes
   final Function onDateChange;
+
+  /// The text to be displayed if no initial value is given
   final String hintText;
+
+  /// The color of the text within the text box
   final Color color;
+
+  /// The color of the hint text within the text box
   final Color hintColor;
+
+  /// The background color of the cupertino picker
   final Color pickerBackgroundColor;
+
+  /// The size of the font within the text box
   final double fontSize;
+
+  /// The inner padding within the text box
   final double textfieldPadding;
+
+  /// Specifies if the text box can be modified
   final bool enabled;
 
   @override
-  _CupertinoDateTextBoxState createState() =>
-      new _CupertinoDateTextBoxState();
+  _CupertinoDateTextBoxState createState() => new _CupertinoDateTextBoxState();
 }
 
 class _CupertinoDateTextBoxState extends State<CupertinoDateTextBox> {
