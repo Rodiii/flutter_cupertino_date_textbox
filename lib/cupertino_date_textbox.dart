@@ -7,9 +7,9 @@ import 'package:intl/intl.dart';
 class CupertinoDateTextBox extends StatefulWidget {
   /// A text box widget which displays a cupertino picker to select a date if clicked
   CupertinoDateTextBox(
-      {@required this.initialValue,
-      @required this.onDateChange,
-      @required this.hintText,
+      {required this.initialValue,
+      required this.onDateChange,
+      required this.hintText,
       this.color = CupertinoColors.label,
       this.hintColor = CupertinoColors.inactiveGray,
       this.pickerBackgroundColor = CupertinoColors.systemBackground,
@@ -51,7 +51,7 @@ class CupertinoDateTextBox extends StatefulWidget {
 class _CupertinoDateTextBoxState extends State<CupertinoDateTextBox> {
   final double _kPickerSheetHeight = 250.0;
 
-  DateTime _currentDate;
+  DateTime? _currentDate;
 
   @override
   void initState() {
@@ -95,7 +95,7 @@ class _CupertinoDateTextBoxState extends State<CupertinoDateTextBox> {
     Color textColor;
     if (_currentDate != null) {
       final formatter = new DateFormat.yMd();
-      fieldText = formatter.format(_currentDate);
+      fieldText = formatter.format(_currentDate!);
       textColor = widget.color;
     } else {
       fieldText = hintText;
@@ -121,6 +121,8 @@ class _CupertinoDateTextBoxState extends State<CupertinoDateTextBox> {
                         initialDateTime: _currentDate,
                         onDateTimeChanged: (DateTime newDateTime) {
                           onSelectedFunction(newDateTime);
+                          // call callback
+                          callCallback();
                         }));
                   },
                 );
