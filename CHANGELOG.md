@@ -1,3 +1,6 @@
+## 1.0.3
+  * Upgrade to null-sound safety
+  
 ## 1.0.2
   * Update intl dependency to ^0.18.0
 ## 1.0.1
