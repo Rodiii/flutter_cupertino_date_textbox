@@ -1,3 +1,5 @@
+## 1.0.2
+  * Update intl dependency to ^0.18.0
 ## 1.0.1
   * Refactor: support null-sound-safety
   * Bugfix: fix a bug that not the actual selected date has been pushed to the user (because of scrolling after modal popup closure)
